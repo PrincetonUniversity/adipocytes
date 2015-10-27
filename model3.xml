@@ -1,0 +1,626 @@
+<reactionnetwork>						
+	<metabolitepools>					
+		<pool atoms="6" id="GLCU"/>				
+		<pool atoms="6" id="GLC0"/>				
+		<pool atoms="5" id="GlnU"/>				
+		<pool atoms="5" id="Gln0"/>				
+		<pool atoms="3" id="LAC0"/>				
+		<pool atoms="3" id="Ala0"/>				
+		<pool atoms="2" id="AcCoA0"/>				
+		<pool atoms="1" id="CO20"/>				
+						
+		<pool atoms="6" id="GLC"/>				
+		<pool atoms="6" id="G6P"/>				
+		<pool atoms="6" id="F6P"/>				
+		<pool atoms="6" id="FBP"/>				
+		<pool atoms="3" id="GAP"/>				
+		<pool atoms="3" id="DHAP"/>				
+		<pool atoms="3" id="BPG"/>				
+		<pool atoms="3" id="PGA"/>				
+		<pool atoms="3" id="PEP"/>				
+		<pool atoms="3" id="PYR"/>				
+		<pool atoms="3" id="LAC"/>				
+		<pool atoms="2" id="AcCoA"/>				
+		<pool atoms="6" id="CitICit"/>				
+		<pool atoms="5" id="OGA"/>				
+		<pool atoms="4" id="SuccCoA"/>				
+		<pool atoms="4" id="Succ"/>				
+		<pool atoms="4" id="Fum"/>				
+		<pool atoms="4" id="MAL"/>				
+		<pool atoms="4" id="OAA"/>				
+		<pool atoms="4" id="Asp"/>				
+		<pool atoms="5" id="Glu"/>				
+		<pool atoms="5" id="Gln"/>				
+		<pool atoms="1" id="CO2"/>				
+						
+		<pool atoms="4" id="MALc"/>				
+						
+		<pool atoms="4" id="OAAm"/>				
+		<pool atoms="4" id="MALm"/>				
+		<pool atoms="3" id="PYRm"/>				
+		<pool atoms="2" id="AcCoAm"/>				
+		<pool atoms="3" id="Ala"/>				
+						
+		<pool atoms="6" id="GLC_g"/>				
+		<pool atoms="6" id="G6P_g"/>				
+		<pool atoms="6" id="F6P_g"/>				
+		<pool atoms="6" id="FBP_g"/>				
+		<pool atoms="3" id="GAP_g"/>				
+		<pool atoms="3" id="DHAP_g"/>				
+		<pool atoms="3" id="BPG_g"/>				
+		<pool atoms="3" id="PGA_g"/>				
+		<pool atoms="3" id="PEP_g"/>				
+		<pool atoms="3" id="PYR_g"/>				
+		<pool atoms="3" id="LAC_g"/>				
+		<pool atoms="2" id="AcCoA_g"/>				
+		<pool atoms="6" id="CitICit_g"/>				
+		<pool atoms="5" id="OGA_g"/>				
+		<pool atoms="4" id="SuccCoA_g"/>				
+		<pool atoms="4" id="Succ_g"/>				
+		<pool atoms="4" id="Fum_g"/>				
+		<pool atoms="4" id="MAL_g"/>				
+		<pool atoms="4" id="OAA_g"/>				
+		<pool atoms="4" id="Asp_g"/>				
+		<pool atoms="5" id="Glu_g"/>				
+		<pool atoms="5" id="Gln_g"/>				
+		<pool atoms="1" id="CO2_g"/>				
+						
+		<pool atoms="4" id="MALc_g"/>				
+						
+		<pool atoms="4" id="OAAm_g"/>				
+		<pool atoms="4" id="MALm_g"/>				
+		<pool atoms="3" id="PYRm_g"/>				
+		<pool atoms="2" id="AcCoAm_g"/>				
+		<pool atoms="3" id="Ala_g"/>				
+						
+	</metabolitepools>					
+	<reaction id="uptU">					
+		<reduct cfg="ABCDEF" id="GLCU"/>				
+		<rproduct cfg="ABCDEF" id="GLC"/>				
+	</reaction>					
+	<reaction id="upt0">					
+		<reduct cfg="ABCDEF" id="GLC0"/>				
+		<rproduct cfg="ABCDEF" id="GLC"/>				
+	</reaction>					
+	<reaction id="upt">					
+		<reduct cfg="ABCDEF" id="GLC"/>				
+		<rproduct cfg="ABCDEF" id="G6P"/>				
+	</reaction>					
+<!--gln uptake-->						
+	<reaction id="uptGln0">					
+		<reduct cfg="ABCDE" id="Gln0"/>				
+		<rproduct cfg="ABCDE" id="Gln"/>				
+	</reaction>					
+	<reaction id="pgi">					
+		<reduct cfg="ABCDEF" id="G6P"/>				
+		<rproduct cfg="ABCDEF" id="F6P"/>				
+	</reaction>					
+	<reaction id="pfk">					
+		<reduct cfg="ABCDEF" id="F6P"/>				
+		<rproduct cfg="ABCDEF" id="FBP"/>				
+	</reaction>					
+	<reaction id="fba">					
+		<reduct cfg="ABCDEF" id="FBP"/>				
+		<rproduct cfg="CBA" id="DHAP"/>				
+		<rproduct cfg="DEF" id="GAP"/>				
+	</reaction>					
+	<reaction id="tpi">					
+		<reduct cfg="ABC" id="DHAP"/>				
+		<rproduct cfg="ABC" id="GAP"/>				
+	</reaction>					
+	<reaction id="gapd">					
+		<reduct cfg="ABC" id="GAP"/>				
+		<rproduct cfg="ABC" id="BPG"/>				
+	</reaction>					
+	<reaction id="pgk">					
+		<reduct cfg="ABC" id="BPG"/>				
+		<rproduct cfg="ABC" id="PGA"/>				
+	</reaction>					
+	<reaction id="eno">					
+		<reduct cfg="ABC" id="PGA"/>				
+		<rproduct cfg="ABC" id="PEP"/>				
+	</reaction>					
+	<reaction id="pyk">					
+		<reduct cfg="ABC" id="PEP"/>				
+		<rproduct cfg="ABC" id="PYR"/>				
+	</reaction>					
+	<reaction id="pyrt">					
+		<reduct cfg="ABC" id="PYR"/>				
+		<rproduct cfg="ABC" id="PYRm"/>				
+	</reaction>					
+	<reaction id="ppck">					
+		<reduct cfg="ABCD" id="OAA"/>				
+		<rproduct cfg="ABC" id="PEP"/>				
+		<rproduct cfg="D" id="CO2"/>				
+	</reaction>					
+	<reaction id="me">					
+		<reduct cfg="ABCD" id="MALc"/>				
+		<rproduct cfg="ABC" id="PYR"/>				
+		<rproduct cfg="D" id="CO2"/>				
+	</reaction>					
+	<reaction id="me2">					
+		<reduct cfg="ABCD" id="MALm"/>				
+		<rproduct cfg="ABC" id="PYRm"/>				
+		<rproduct cfg="D" id="CO2"/>				
+	</reaction>					
+	<reaction id="pc2">					
+		<reduct cfg="ABC" id="PYRm"/>				
+		<reduct cfg="D" id="CO2"/>				
+		<rproduct cfg="ABCD" id="OAAm"/>				
+	</reaction>					
+	<reaction id="pc">					
+		<reduct cfg="ABC" id="PYR"/>				
+		<reduct cfg="D" id="CO2"/>				
+		<rproduct cfg="ABCD" id="OAA"/>				
+	</reaction>					
+	<reaction id="pdh">					
+		<reduct cfg="ABC" id="PYRm"/>				
+		<rproduct cfg="BC" id="AcCoAm"/>				
+		<rproduct cfg="A" id="CO2"/>				
+	</reaction>					
+	<reaction id="IN_AcCoA">					
+		<reduct cfg="AB" id="AcCoA0"/>				
+		<rproduct cfg="AB" id="AcCoAm"/>				
+	</reaction>					
+	<reaction id="cs">					
+		<reduct cfg="ABCD" id="OAAm"/>				
+		<reduct cfg="ab" id="AcCoAm"/>				
+		<rproduct cfg="DCBAba" id="CitICit"/>				
+	</reaction>					
+	<reaction id="acitl">					
+		<reduct cfg="DCBAba" id="CitICit"/>				
+		<rproduct cfg="ABCD" id="OAA"/>				
+		<rproduct cfg="ab" id="AcCoA"/>				
+	</reaction>					
+	<reaction id="EX_AcCoA">					
+		<reduct cfg="AB" id="AcCoA"/>				
+	</reaction>					
+	<reaction id="icdh">					
+		<reduct cfg="ABCDEF" id="CitICit"/>				
+		<rproduct cfg="ABCEF" id="OGA"/>				
+		<rproduct cfg="D" id="CO2"/>				
+	</reaction>					
+	<reaction id="akgdh">					
+		<reduct cfg="ABCDE" id="OGA"/>				
+		<rproduct cfg="BCDE" id="SuccCoA"/>				
+		<rproduct cfg="A" id="CO2"/>				
+	</reaction>					
+	<reaction id="sucoasA">					
+		<reduct cfg="ABCD" id="SuccCoA"/>				
+		<rproduct cfg="ABCD" id="Succ"/>				
+	</reaction>					
+	<reaction id="sucoasB">					
+		<reduct cfg="ABCD" id="SuccCoA"/>				
+		<rproduct cfg="DCBA" id="Succ"/>				
+	</reaction>					
+	<reaction id="sucd">					
+		<reduct cfg="ABCD" id="Succ"/>				
+		<rproduct cfg="ABCD" id="Fum"/>				
+	</reaction>					
+	<reaction id="fumA">					
+		<reduct cfg="ABCD" id="Fum"/>				
+		<rproduct cfg="ABCD" id="MALm"/>				
+	</reaction>					
+	<reaction id="fumB">					
+		<reduct cfg="ABCD" id="Fum"/>				
+		<rproduct cfg="DCBA" id="MALm"/>				
+	</reaction>					
+	<reaction id="mdhm">					
+		<reduct cfg="ABCD" id="MALm"/>				
+		<rproduct cfg="ABCD" id="OAAm"/>				
+	</reaction>					
+	<reaction id="mdh">					
+		<reduct cfg="ABCD" id="MALc"/>				
+		<rproduct cfg="ABCD" id="OAA"/>				
+	</reaction>					
+	<reaction id="malt">					
+		<reduct cfg="ABCD" id="MALm"/>				
+		<rproduct cfg="ABCD" id="MALc"/>				
+	</reaction>					
+	<reaction id="malc">					
+		<reduct cfg="ABCD" id="MALc"/>				
+		<rproduct cfg="ABCD" id="MAL"/>				
+	</reaction>					
+	<reaction id="malm">					
+		<reduct cfg="ABCD" id="MALm"/>				
+		<rproduct cfg="ABCD" id="MAL"/>				
+	</reaction>					
+	<reaction id="EX_MAL">					
+		<reduct cfg="ABCD" id="MAL"/>				
+	</reaction>					
+	<reaction id="IN_CO20">					
+		<reduct cfg="A" id="CO20"/>				
+		<rproduct cfg="A" id="CO2"/>				
+	</reaction>					
+	<reaction id="EX_CO2">					
+		<reduct cfg="A" id="CO2"/>				
+	</reaction>					
+	<reaction id="OGA_Glu">					
+		<reduct cfg="ABCDE" id="OGA"/>				
+		<rproduct cfg="ABCDE" id="Glu"/>				
+	</reaction>					
+	<reaction id="OGA_Gln">					
+		<reduct cfg="ABCDE" id="Glu"/>				
+		<rproduct cfg="ABCDE" id="Gln"/>				
+	</reaction>					
+	<reaction id="EX_OGA_Gln">					
+		<reduct cfg="ABCDE" id="Gln"/>				
+	</reaction>					
+	<reaction id="EX_OGA_Glu">					
+		<reduct cfg="ABCDE" id="Glu"/>				
+	</reaction>					
+	<reaction id="OAA_Asp">					
+		<reduct cfg="ABCD" id="OAA"/>				
+		<rproduct cfg="ABCD" id="Asp"/>				
+	</reaction>					
+	<reaction id="OAA_Aspm">					
+		<reduct cfg="ABCD" id="OAAm"/>				
+		<rproduct cfg="ABCD" id="Asp"/>				
+	</reaction>					
+	<reaction id="EX_OAA_Asp">					
+		<reduct cfg="ABCD" id="Asp"/>				
+	</reaction>					
+<!--Lactate-->						
+	<reaction id="lacd">					
+		<reduct cfg="ABC" id="PYR"/>				
+		<rproduct cfg="ABC" id="LAC"/>				
+	</reaction>					
+	<reaction id="IN_LAC0">					
+		<reduct cfg="ABC" id="LAC0"/>				
+		<rproduct cfg="ABC" id="LAC"/>				
+	</reaction>					
+	<reaction id="EX_LAC">					
+		<reduct cfg="ABC" id="LAC"/>				
+	</reaction>					
+<!--Alanine-->						
+	<reaction id="PYR_Ala">					
+		<reduct cfg="ABC" id="PYR"/>				
+		<rproduct cfg="ABC" id="Ala"/>				
+	</reaction>					
+	<reaction id="PYR_Alam">					
+		<reduct cfg="ABC" id="PYRm"/>				
+		<rproduct cfg="ABC" id="Ala"/>				
+	</reaction>					
+	<reaction id="IN_Ala0">					
+		<reduct cfg="ABC" id="Ala0"/>				
+		<rproduct cfg="ABC" id="Ala"/>				
+	</reaction>					
+	<reaction id="EX_Ala">					
+		<reduct cfg="ABC" id="Ala"/>				
+	</reaction>					
+	<reaction id="EX_G6P">					
+		<reduct cfg="ABCDEF" id="G6P"/>				
+	</reaction>					
+	<reaction id="EX_DHAP">					
+		<reduct cfg="ABC" id="DHAP"/>				
+	</reaction>					
+						
+	<reaction id="upt0_g">					
+		<reduct cfg="ABCDEF" id="GLC0"/>				
+		<rproduct cfg="ABCDEF" id="GLC_g"/>				
+	</reaction>					
+	<reaction id="upt_g">					
+		<reduct cfg="ABCDEF" id="GLC_g"/>				
+		<rproduct cfg="ABCDEF" id="G6P_g"/>				
+	</reaction>					
+<!--gln uptake-->						
+	<reaction id="uptGlnU_g">					
+		<reduct cfg="ABCDE" id="GlnU"/>				
+		<rproduct cfg="ABCDE" id="Gln_g"/>				
+	</reaction>					
+	<reaction id="pgi_g">					
+		<reduct cfg="ABCDEF" id="G6P_g"/>				
+		<rproduct cfg="ABCDEF" id="F6P_g"/>				
+	</reaction>					
+	<reaction id="pfk_g">					
+		<reduct cfg="ABCDEF" id="F6P_g"/>				
+		<rproduct cfg="ABCDEF" id="FBP_g"/>				
+	</reaction>					
+	<reaction id="fba_g">					
+		<reduct cfg="ABCDEF" id="FBP_g"/>				
+		<rproduct cfg="CBA" id="DHAP_g"/>				
+		<rproduct cfg="DEF" id="GAP_g"/>				
+	</reaction>					
+	<reaction id="tpi_g">					
+		<reduct cfg="ABC" id="DHAP_g"/>				
+		<rproduct cfg="ABC" id="GAP_g"/>				
+	</reaction>					
+	<reaction id="gapd_g">					
+		<reduct cfg="ABC" id="GAP_g"/>				
+		<rproduct cfg="ABC" id="BPG_g"/>				
+	</reaction>					
+	<reaction id="pgk_g">					
+		<reduct cfg="ABC" id="BPG_g"/>				
+		<rproduct cfg="ABC" id="PGA_g"/>				
+	</reaction>					
+	<reaction id="eno_g">					
+		<reduct cfg="ABC" id="PGA_g"/>				
+		<rproduct cfg="ABC" id="PEP_g"/>				
+	</reaction>					
+	<reaction id="pyk_g">					
+		<reduct cfg="ABC" id="PEP_g"/>				
+		<rproduct cfg="ABC" id="PYR_g"/>				
+	</reaction>					
+	<reaction id="pyrt_g">					
+		<reduct cfg="ABC" id="PYR_g"/>				
+		<rproduct cfg="ABC" id="PYRm_g"/>				
+	</reaction>					
+	<reaction id="ppck_g">					
+		<reduct cfg="ABCD" id="OAA_g"/>				
+		<rproduct cfg="ABC" id="PEP_g"/>				
+		<rproduct cfg="D" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="me_g">					
+		<reduct cfg="ABCD" id="MALc_g"/>				
+		<rproduct cfg="ABC" id="PYR_g"/>				
+		<rproduct cfg="D" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="me2_g">					
+		<reduct cfg="ABCD" id="MALm_g"/>				
+		<rproduct cfg="ABC" id="PYRm_g"/>				
+		<rproduct cfg="D" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="pc2_g">					
+		<reduct cfg="ABC" id="PYRm_g"/>				
+		<reduct cfg="D" id="CO2_g"/>				
+		<rproduct cfg="ABCD" id="OAAm_g"/>				
+	</reaction>					
+	<reaction id="pc_g">					
+		<reduct cfg="ABC" id="PYR_g"/>				
+		<reduct cfg="D" id="CO2_g"/>				
+		<rproduct cfg="ABCD" id="OAA_g"/>				
+	</reaction>					
+	<reaction id="pdh_g">					
+		<reduct cfg="ABC" id="PYRm_g"/>				
+		<rproduct cfg="BC" id="AcCoAm_g"/>				
+		<rproduct cfg="A" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="IN_AcCoA_g">					
+		<reduct cfg="AB" id="AcCoA0"/>				
+		<rproduct cfg="AB" id="AcCoAm_g"/>				
+	</reaction>					
+	<reaction id="cs_g">					
+		<reduct cfg="ABCD" id="OAAm_g"/>				
+		<reduct cfg="ab" id="AcCoAm_g"/>				
+		<rproduct cfg="DCBAba" id="CitICit_g"/>				
+	</reaction>					
+	<reaction id="acitl_g">					
+		<reduct cfg="DCBAba" id="CitICit_g"/>				
+		<rproduct cfg="ABCD" id="OAA_g"/>				
+		<rproduct cfg="ab" id="AcCoA_g"/>				
+	</reaction>					
+	<reaction id="EX_AcCoA_g">					
+		<reduct cfg="AB" id="AcCoA_g"/>				
+	</reaction>					
+	<reaction id="icdh_g">					
+		<reduct cfg="ABCDEF" id="CitICit_g"/>				
+		<rproduct cfg="ABCEF" id="OGA_g"/>				
+		<rproduct cfg="D" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="akgdh_g">					
+		<reduct cfg="ABCDE" id="OGA_g"/>				
+		<rproduct cfg="BCDE" id="SuccCoA_g"/>				
+		<rproduct cfg="A" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="sucoasA_g">					
+		<reduct cfg="ABCD" id="SuccCoA_g"/>				
+		<rproduct cfg="ABCD" id="Succ_g"/>				
+	</reaction>					
+	<reaction id="sucoasB_g">					
+		<reduct cfg="ABCD" id="SuccCoA_g"/>				
+		<rproduct cfg="DCBA" id="Succ_g"/>				
+	</reaction>					
+	<reaction id="sucd_g">					
+		<reduct cfg="ABCD" id="Succ_g"/>				
+		<rproduct cfg="ABCD" id="Fum_g"/>				
+	</reaction>					
+	<reaction id="fumA_g">					
+		<reduct cfg="ABCD" id="Fum_g"/>				
+		<rproduct cfg="ABCD" id="MALm_g"/>				
+	</reaction>					
+	<reaction id="fumB_g">					
+		<reduct cfg="ABCD" id="Fum_g"/>				
+		<rproduct cfg="DCBA" id="MALm_g"/>				
+	</reaction>					
+	<reaction id="mdhm_g">					
+		<reduct cfg="ABCD" id="MALm_g"/>				
+		<rproduct cfg="ABCD" id="OAAm_g"/>				
+	</reaction>					
+	<reaction id="mdh_g">					
+		<reduct cfg="ABCD" id="MALc_g"/>				
+		<rproduct cfg="ABCD" id="OAA_g"/>				
+	</reaction>					
+	<reaction id="malt_g">					
+		<reduct cfg="ABCD" id="MALm_g"/>				
+		<rproduct cfg="ABCD" id="MALc_g"/>				
+	</reaction>					
+	<reaction id="malc_g">					
+		<reduct cfg="ABCD" id="MALc_g"/>				
+		<rproduct cfg="ABCD" id="MAL_g"/>				
+	</reaction>					
+	<reaction id="malm_g">					
+		<reduct cfg="ABCD" id="MALm_g"/>				
+		<rproduct cfg="ABCD" id="MAL_g"/>				
+	</reaction>					
+	<reaction id="EX_MAL_g">					
+		<reduct cfg="ABCD" id="MAL_g"/>				
+	</reaction>					
+	<reaction id="IN_CO20_g">					
+		<reduct cfg="A" id="CO20"/>				
+		<rproduct cfg="A" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="EX_CO2_g">					
+		<reduct cfg="A" id="CO2_g"/>				
+	</reaction>					
+	<reaction id="OGA_Glu_g">					
+		<reduct cfg="ABCDE" id="OGA_g"/>				
+		<rproduct cfg="ABCDE" id="Glu_g"/>				
+	</reaction>					
+	<reaction id="OGA_Gln_g">					
+		<reduct cfg="ABCDE" id="Glu_g"/>				
+		<rproduct cfg="ABCDE" id="Gln_g"/>				
+	</reaction>					
+	<reaction id="EX_OGA_Gln_g">					
+		<reduct cfg="ABCDE" id="Gln_g"/>				
+	</reaction>					
+	<reaction id="EX_OGA_Glu_g">					
+		<reduct cfg="ABCDE" id="Glu_g"/>				
+	</reaction>					
+	<reaction id="OAA_Asp_g">					
+		<reduct cfg="ABCD" id="OAA_g"/>				
+		<rproduct cfg="ABCD" id="Asp_g"/>				
+	</reaction>					
+	<reaction id="OAA_Aspm_g">					
+		<reduct cfg="ABCD" id="OAAm_g"/>				
+		<rproduct cfg="ABCD" id="Asp_g"/>				
+	</reaction>					
+	<reaction id="EX_OAA_Asp_g">					
+		<reduct cfg="ABCD" id="Asp_g"/>				
+	</reaction>					
+<!--Lactate-->						
+	<reaction id="lacd_g">					
+		<reduct cfg="ABC" id="PYR_g"/>				
+		<rproduct cfg="ABC" id="LAC_g"/>				
+	</reaction>					
+	<reaction id="IN_LAC0_g">					
+		<reduct cfg="ABC" id="LAC0"/>				
+		<rproduct cfg="ABC" id="LAC_g"/>				
+	</reaction>					
+	<reaction id="EX_LAC_g">					
+		<reduct cfg="ABC" id="LAC_g"/>				
+	</reaction>					
+<!--Alanine-->						
+	<reaction id="PYR_Ala_g">					
+		<reduct cfg="ABC" id="PYR_g"/>				
+		<rproduct cfg="ABC" id="Ala_g"/>				
+	</reaction>					
+	<reaction id="PYR_Alam_g">					
+		<reduct cfg="ABC" id="PYRm_g"/>				
+		<rproduct cfg="ABC" id="Ala_g"/>				
+	</reaction>					
+	<reaction id="IN_Ala0_g">					
+		<reduct cfg="ABC" id="Ala0"/>				
+		<rproduct cfg="ABC" id="Ala_g"/>				
+	</reaction>					
+	<reaction id="EX_Ala_g">					
+		<reduct cfg="ABC" id="Ala_g"/>				
+	</reaction>					
+	<reaction id="EX_G6P_g">					
+		<reduct cfg="ABCDEF" id="G6P_g"/>				
+	</reaction>					
+	<reaction id="EX_DHAP_g">					
+		<reduct cfg="ABC" id="DHAP_g"/>				
+	</reaction>										
+</reactionnetwork>						
+<constraints>						
+	<net>					
+		<textual>				
+			sucoasA	=	sucoasB	;
+			fumA	=	fumB	;
+						
+			sucoasA	=	sucoasA_g	;
+			fumA	=	fumA_g	;
+						
+			upt	=	upt_g	;
+			uptGln0	=	uptGlnU_g	;
+			EX_OGA_Gln	=	EX_OGA_Gln_g	;
+			EX_OGA_Glu	=	EX_OGA_Glu_g	;
+			EX_OAA_Asp	=	EX_OAA_Asp_g	;
+			EX_MAL	=	EX_MAL_g	;
+			IN_AcCoA	=	IN_AcCoA_g	;
+			EX_AcCoA	=	EX_AcCoA_g	;
+			IN_CO20	=	IN_CO20_g	;
+			IN_LAC0	=	IN_LAC0_g	;
+			EX_LAC	=	EX_LAC_g	;
+			IN_Ala0	=	IN_Ala0_g	;
+			PYR_Alam	=	PYR_Alam_g	;
+			akgdh	=	akgdh_g	;
+			pc	=	pc_g	;
+			pc2	=	pc2_g	;
+			malt	=	malt_g	;
+			malc	=	malc_g	;
+			ppck	=	ppck_g	;
+			OAA_Asp	=	OAA_Asp_g	;
+			EX_G6P	=	EX_G6P_g	;
+			EX_DHAP	=	EX_DHAP_g	;
+						
+		</textual>				
+	</net>					
+	<xch>					
+		<textual>				
+			upt	=	0	;
+			pgi	&lt;=	100	;
+			pfk	&lt;=	100	;
+			fba	&lt;=	100	;
+			tpi	&lt;=	100	;
+			gapd	&lt;=	100	;
+			pgk	&lt;=	100	;
+			eno	&lt;=	100	;
+			pyk	&lt;=	100	;
+			ppck	&lt;=	100	;
+			me	&lt;=	100	;
+			me2	&lt;=	100	;
+			pc	&lt;=	100	;
+			pc2	&lt;=	100	;
+			pyrt	&lt;=	100	;
+			pdh	=	0	;
+			cs	=	0	;
+			acitl	=	0	;
+			icdh	&lt;=	100	;
+			akgdh	&lt;=	100	;
+			sucoasA	&lt;=	50	;
+			sucoasB	=	sucoasA	;
+			sucd	&lt;=	100	;
+			fumA	&lt;=	50	;
+			fumB	=	fumA	;
+			mdh	&lt;=	100	;
+			mdhm	&lt;=	100	;
+			malt	&lt;=	100	;
+			lacd	&lt;=	100	;
+			OGA_Glu	&lt;=	100	;
+			OGA_Gln	&lt;=	100	;
+			OAA_Asp	&lt;=	100	;
+			PYR_Ala	&lt;=	100	;
+			PYR_Alam	&lt;=	100	;
+						
+			upt	=	upt_g	;
+			pgi	=	pgi_g	;
+			pfk	=	pfk_g	;
+			fba	=	fba_g	;
+			tpi	=	tpi_g	;
+			gapd	=	gapd_g	;
+			pgk	=	pgk_g	;
+			eno	=	eno_g	;
+			pyk	=	pyk_g	;
+			ppck	=	ppck_g	;
+			me	=	me_g	;
+			me2	=	me2_g	;
+			pc	=	pc_g	;
+			pc2	=	pc2_g	;
+			pyrt	=	pyrt_g	;
+			pdh	=	pdh_g	;
+			cs	=	cs_g	;
+			acitl	=	acitl_g	;
+			icdh	=	icdh_g	;
+			akgdh	=	akgdh_g	;
+			sucoasA	=	sucoasA_g	;
+			sucoasB	=	sucoasB_g	;
+			sucd	=	sucd_g	;
+			fumA	=	fumA_g	;
+			fumB	=	fumB_g	;
+			mdh	=	mdh_g	;
+			mdhm	=	mdhm_g	;
+			malt	=	malt_g	;
+			malc	=	malc_g	;
+			malm	=	malm_g	;
+			lacd	=	lacd_g	;
+			OGA_Glu	=	OGA_Glu_g	;
+			OGA_Gln	=	OGA_Gln_g	;
+			OAA_Asp	=	OAA_Asp_g	;
+			OAA_Aspm	=	OAA_Aspm_g	;
+			PYR_Ala	=	PYR_Ala_g	;
+			PYR_Alam	=	PYR_Alam_g	;
+						
+		</textual>				
+	</xch>					
+</constraints>						
